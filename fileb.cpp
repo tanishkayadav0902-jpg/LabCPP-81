@@ -10,7 +10,6 @@ namespace SYCS4
         return 0;
     }
 
-{
     int division()
     {
         int a,b,division;
@@ -21,4 +20,4 @@ namespace SYCS4
     }
 
 }
-}
+ 
