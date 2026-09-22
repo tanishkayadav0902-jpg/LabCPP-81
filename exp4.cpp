@@ -69,14 +69,15 @@ public:
     void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            cout << "Deposited: ₹" << amount << endl;
+            balance = balance-20;
+            cout << "Deposited(20 rupees transaction fee): ₹" << amount << endl;
         }
     }
 
     void withdraw(double amount) {
         double total = amount + transactionFee;
 
-        if (total <= balance) {
+               if (total <= balance) {
             balance -= total;
             cout << "Withdrawn: ₹" << amount << " (₹" << transactionFee
                  << " fee applied)" << endl;
