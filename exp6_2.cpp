@@ -5,18 +5,22 @@ class Shape
     public:
 int area(int s) 
 { 
+    cout<< "Area of square is\n";
 return(s*s); 
 } 
 int area(int l,int b) 
 { 
+    "Area of rectangle is\n";
 return(l*b); 
 } 
 float area(float r) 
 { 
+    "Area of circle is\n";
 return(3.14*r*r); 
 } 
 float area(float bs,float ht) 
 { 
+    "Area of triangle is\n";
 return((bs*ht)/2); 
 }
     
