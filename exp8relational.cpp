@@ -7,7 +7,6 @@ private:
     int value;
 
 public:
-    // Constructor
     MyClass(int val)
     {
         value = val;
