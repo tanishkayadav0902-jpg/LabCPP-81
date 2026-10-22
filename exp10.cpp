@@ -8,13 +8,13 @@ int main()
     ofstream fout;
     string line;
 
-    fout.open("sample.txt");
+    fout.open("sample.txt",ios::app);
 
     while (fout)
     {
         getline(cin, line);
 
-        if (line == "-1")
+        if (line == "-1") 
             break;
 
         fout << line << endl;
@@ -23,7 +23,7 @@ int main()
     fout.close();
 
     ifstream fin;
-    fin.open("sample.txt");
+    fin.open("Sample.txtq");
 
     while (getline(fin, line))
     {
